@@ -12,4 +12,4 @@
     
 
 
-![image](https://github.com/kimi2000/DJGetPicture/GetPicture.gif)
+![image](https://github.com/kimi2000/DJGetPicture/blob/master/GetPicture.gif)
