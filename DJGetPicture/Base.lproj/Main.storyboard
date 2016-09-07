@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNT-Wh-9Lx">
+                                <rect key="frame" x="100" y="100" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="nmL-b8-7YR"/>
+                                    <constraint firstAttribute="height" constant="100" id="rng-Ql-koF"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="add-img"/>
+                                <connections>
+                                    <action selector="pictureBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sxx-BG-XkB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvC-lu-DXX">
+                                <rect key="frame" x="100" y="52" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="kUE-bI-IRM"/>
+                                    <constraint firstAttribute="height" constant="30" id="yA1-Ox-HAo"/>
+                                </constraints>
+                                <state key="normal" title="设置图片"/>
+                                <connections>
+                                    <action selector="pictureBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MSS-If-6Eb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="自带判断相册/相机是否允许访问" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZa-ad-nJy">
+                                <rect key="frame" x="50" y="281" width="300" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="1Y5-YU-ub0"/>
+                                    <constraint firstAttribute="width" constant="300" id="IEg-Zm-vWk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.1333333333" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AvC-lu-DXX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="7Xw-lx-2TR"/>
+                            <constraint firstAttribute="trailing" secondItem="XNT-Wh-9Lx" secondAttribute="trailing" constant="100" id="7xK-OX-LsF"/>
+                            <constraint firstAttribute="trailing" secondItem="AvC-lu-DXX" secondAttribute="trailing" constant="100" id="Ece-L6-b8y"/>
+                            <constraint firstItem="nZa-ad-nJy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="VBu-Ln-Dfr"/>
+                            <constraint firstAttribute="trailing" secondItem="nZa-ad-nJy" secondAttribute="trailing" constant="50" id="eKu-WU-UW3"/>
+                            <constraint firstItem="XNT-Wh-9Lx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="ged-qZ-Rtz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pictureBtn" destination="XNT-Wh-9Lx" id="5Y2-5V-EW9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="290"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add-img" width="65" height="65"/>
+    </resources>
+</document>
